@@ -165,7 +165,9 @@ header {
 .hero {
     background-color: var(--brand-color);
     padding: 188px 0;
-    background-image: url(images/hero-image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+        url(../images/hero-image.jpg);
+    background-size: 1440px 600px;
 }
 
 .hero-text {
@@ -239,13 +241,13 @@ header {
     gap: 24px;
 }
 
-.offers-icons {
+.offers-icons-background {
     background-color: #f4f4fd;
     height: 112px;
     width: 264px;
-}
-
-.offer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .offer-position {
@@ -324,9 +326,6 @@ header {
     margin-top: 8px;
 }
 
-.our-team-social-media-icon {
-}
-
 .name {
     font-size: 20px;
     font-weight: 500;
@@ -394,9 +393,37 @@ header {
     border-top: none;
 }
 
+.customers {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.72px;
+    color: var(--brand-color);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-card {
+    border: 1px;
+    border-color: #8e8f99;
+}
+
+.customers-icon {
+    width: 168px;
+    height: 88px;
+}
+
 .footer {
     background-color: var(--brand-color);
     padding: 100px 0;
+}
+
+.footer-section {
+    display: flex;
 }
 
 .footer-text {
@@ -404,4 +431,18 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.footer-social-media-header {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.footer-social-media-list {
+    display: flex;
+    gap: 16px;
 }
